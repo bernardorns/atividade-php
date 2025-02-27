@@ -1,5 +1,24 @@
-Este código PHP define um usuário com nome, idade e hobbies utilizando um array associativo. Em seguida, ele executa três funções principais.
-A primeira função verifica se a idade do usuário é menor que 18 e retorna a mensagem "Menor de idade" ou "Maior de idade", utilizando um operador ternário para simplificar a estrutura condicional.
-A segunda função lista os hobbies do usuário percorrendo o array com um loop foreach. Se o array estiver vazio, exibe uma mensagem indicando que não há hobbies cadastrados.
-A terceira função exibe uma saudação personalizada com o nome e a idade do usuário, utilizando concatenação de strings para montar a mensagem.
-O código, ao ser executado, imprime se o usuário é maior ou menor de idade, lista seus hobbies e exibe uma saudação personalizada, tornando a estrutura mais modular e organizada.
+Informações do Usuário em PHP
+Este projeto é um simples script PHP que exibe informações de um usuário, incluindo nome, idade e hobbies. Ele também verifica se o usuário é maior de idade e exibe uma saudação personalizada.
+Funcionalidades
+  Verifica se o usuário é maior ou menor de idade
+  Exibe uma lista de hobbies (se houver)
+  Retorna uma mensagem personalizada com nome e idade
+Estrutura do Código
+Definição do Usuário:
+  O usuário é representado por um array associativo contendo nome, idade e hobbies.
+
+Verificação de Idade:
+  Uma função retorna "Menor de idade" ou "Maior de idade", dependendo da idade informada.
+
+Listagem de Hobbies:
+  Percorre um array e exibe os hobbies do usuário. Caso não haja hobbies cadastrados, uma mensagem informativa é exibida.
+
+Mensagem Personalizada:
+  Exibe uma saudação dinâmica incluindo nome e idade do usuário.
+  
+Tecnologias Utilizadas
+  PHP
+  Estruturas condicionais
+  Arrays associativos
+  Funções
