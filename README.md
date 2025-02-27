@@ -1,27 +1,5 @@
-﻿# atividade-php
-# Descrição do Código PHP
-
-Este código PHP define um array associativo para armazenar informações de um usuário, incluindo nome, idade e uma lista de hobbies. Ele verifica a idade do usuário, exibe uma mensagem correspondente e imprime a lista de hobbies. Além disso, uma função personalizada é usada para exibir uma saudação personalizada.
-
-## Estrutura do Código
-
-1. **Declaração do Array `$dadosUsuario`**: 
-   - Contém as chaves `nome`, `idade` e `hobbies`.
-   - O nome do usuário é "Bernardo".
-   - A idade é 21 anos.
-   - O campo `hobbies` é uma lista (array) que atualmente está vazia.
-
-2. **Verificação da Idade**:
-   - Utiliza um operador ternário para definir `$mensagemIdade` como "Menor de idade" ou "Maior de idade", com base na idade do usuário.
-   - Exibe a mensagem correspondente.
-
-3. **Exibição da Lista de Hobbies**:
-   - Percorre o array `hobbies` com um `foreach` e imprime cada item na tela.
-
-4. **Função `mostrarSaudacao($nome, $anos)`**:
-   - Retorna uma mensagem personalizada contendo o nome e a idade do usuário.
-
-5. **Chamada da Função `mostrarSaudacao`**:
-   - Exibe a mensagem final na tela.
-
-Este código pode ser usado para armazenar e exibir informações básicas de um usuário em um sistema PHP simples.
+Este código PHP define um usuário com nome, idade e hobbies utilizando um array associativo. Em seguida, ele executa três funções principais.
+A primeira função verifica se a idade do usuário é menor que 18 e retorna a mensagem "Menor de idade" ou "Maior de idade", utilizando um operador ternário para simplificar a estrutura condicional.
+A segunda função lista os hobbies do usuário percorrendo o array com um loop foreach. Se o array estiver vazio, exibe uma mensagem indicando que não há hobbies cadastrados.
+A terceira função exibe uma saudação personalizada com o nome e a idade do usuário, utilizando concatenação de strings para montar a mensagem.
+O código, ao ser executado, imprime se o usuário é maior ou menor de idade, lista seus hobbies e exibe uma saudação personalizada, tornando a estrutura mais modular e organizada.
