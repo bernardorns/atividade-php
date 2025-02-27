@@ -7,8 +7,8 @@ Este código PHP define um array associativo para armazenar informações de um 
 
 1. **Declaração do Array `$dadosUsuario`**: 
    - Contém as chaves `nome`, `idade` e `hobbies`.
-   - O nome do usuário é "João".
-   - A idade é 20 anos.
+   - O nome do usuário é "Bernardo".
+   - A idade é 21 anos.
    - O campo `hobbies` é uma lista (array) que atualmente está vazia.
 
 2. **Verificação da Idade**:
