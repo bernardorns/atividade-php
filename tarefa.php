@@ -1,21 +1,32 @@
 <?php
-$dadosUsuario = array(
-    "nome" => "João",
-    "idade" => 20,
-    "hobbies" => array("")
-);
+$usuario = [
+    "nome" => "Bernardo",
+    "idade" => 21,
+    "hobbies" => ["Correr", "Leitura", "Video Game"]
+];
 
-$mensagemIdade = ($dadosUsuario["idade"] < 18) ? "Menor de idade" : "Maior de idade";
-echo "$mensagemIdade\n";
-
-echo "Lista de Hobbies:\n";
-foreach ($dadosUsuario["hobbies"] as $interesse) {
-    echo "- $interesse\n";
+function verificarIdade($idade) {
+    return $idade < 18 ? "Menor de idade" : "Maior de idade";
 }
 
-function mostrarSaudacao($nome, $anos) {
-    return "Olá, $nome! Você tem $anos anos.\n";
+echo verificarIdade($usuario["idade"]) . "\n";
+
+function listarHobbies($hobbies) {
+    echo "Hobbies:\n";
+    if (!empty($hobbies)) {
+        foreach ($hobbies as $hobby) {
+            echo "- $hobby\n";
+        }
+    } else {
+        echo "- Nenhum hobby cadastrado.\n";
+    }
 }
 
-echo mostrarSaudacao($dadosUsuario["nome"], $dadosUsuario["idade"]);
+listarHobbies($usuario["hobbies"]);
+
+function exibirMensagem($usuario) {
+    return "Olá, " . $usuario["nome"] . "! Você tem " . $usuario["idade"] . " anos.\n";
+}
+
+echo exibirMensagem($usuario);
 ?>
